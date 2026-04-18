@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request - Cyber Glitch: Core Reassembly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .status-box {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+        .code {
+            font-family: monospace;
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Deletion Request</h1>
+        <p><strong>Game:</strong> Cyber Glitch: Core Reassembly</p>
+        <p><strong>Request Date:</strong> <span id="date"></span></p>
+        
+        <div class="status-box">
+            <h2>✅ Request Received</h2>
+            <p>Your data deletion request has been received and is being processed.</p>
+        </div>
+        
+        <h2>What happens next?</h2>
+        <p>We will process your request and delete your game data within 30 days. This includes:</p>
+        <ul>
+            <li>Game progress and achievements</li>
+            <li>Score history</li>
+            <li>Any other data associated with your game account</li>
+        </ul>
+        
+        <h2>Confirmation Code</h2>
+        <p>Please save this confirmation code for reference:</p>
+        <div class="code" id="confirmation-code">Loading...</div>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions, contact us at: <strong>8844275@qq.com</strong></p>
+        
+        <p><a href="https://lrbgo.github.io/">← Back to Privacy Policy</a></p>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+        document.getElementById('confirmation-code').textContent = 'DEL-' + Date.now() + '-' + Math.random().toString(36).substr(2, 8).toUpperCase();
+    </script>
+</body>
+</html>
